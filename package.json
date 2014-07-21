@@ -1,0 +1,44 @@
+{
+  "name": "weixin-node",
+  "version": "0.0.0",
+  "main": "lib/weixin-node.js",
+  "description": "weixin api ",
+  "homepage": "http://liangyali.com",
+  "bugs": "https://github.com/liangyali/weixin-node/issues",
+  "author": {
+    "name": "liangyali",
+    "email": "me@liangyali.com",
+    "url": "http://liangyali.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liangyali/weixin-node"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "weixin-node",
+    "weixin api "
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-test": "^0.11.0",
+    "jshint-stylish": "^0.2.0",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {
+    "debug": "^1.0.4",
+    "iconv": "^2.1.4",
+    "request": "^2.37.0",
+    "sha1": "^1.1.0",
+    "should": "^4.0.4"
+  }
+}
