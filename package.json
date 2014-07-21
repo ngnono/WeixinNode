@@ -35,8 +35,10 @@
     "test": "grunt"
   },
   "dependencies": {
+    "ejs": "^1.0.0",
     "request": "^2.37.0",
     "sha1": "^1.1.0",
-    "should": "^4.0.4"
+    "should": "^4.0.4",
+    "xml2js": "^0.4.4"
   }
 }

@@ -1,9 +1,9 @@
-var WeixinNode = require('../../lib/index.js');
+var Wechat = require('../../lib/wechat.js');
 var should = require('should');
 
-describe('微信接口测试用例', function () {
+describe('wechat.js# [ 微信接口测试用例 ]', function () {
 
-    it('checkSignature#签名验证', function () {
+    it('checkSignature# [ 签名验证 ]', function () {
 
         // 初始化请求
         var req = {
@@ -15,13 +15,13 @@ describe('微信接口测试用例', function () {
         };
 
         // 初始化签名
-        var weixin = new WeixinNode({
+        var wechat = new Wechat({
             token: '001'
         });
 
-        weixin.checkSignature(req).should.be.true;
+        wechat.checkSignature(req).should.be.true;
 
         req.query.nonce = '10';
-        weixin.checkSignature(req).should.be.false;
+        wechat.checkSignature(req).should.be.false;
     });
 });
