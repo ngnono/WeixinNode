@@ -18,9 +18,6 @@ module.exports = function (grunt) {
             },
             lib: {
                 src: ['lib/**/*.js']
-            },
-            test: {
-                src: ['test/**/*.js']
             }
         },
         watch: {
@@ -55,6 +52,6 @@ module.exports = function (grunt) {
     grunt.registerTask('default', 'mochaTest');
     grunt.registerTask('default', ['jshint', 'mochaTest']);
 
-    grunt.registerTask('test',['mochaTest']);
+    grunt.registerTask('test', ['mochaTest']);
 
 };
